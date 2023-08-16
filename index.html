@@ -4,10 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Bank</title>
-    <!-- Tailwind CSS -->
+    <!-- Tailwind CSS-->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <h2>Welcome to <span class="text-">Our Bank</span></h2>
+    <!-- Header Section -->
+    <header>
+      <h2 class="text-4xl lg:text-5xl text-center mt-10">
+        Welcome to <span class="text-[#4292b7] font-semibold">Our Bank</span>
+      </h2>
+    </header>
+    <main class="max-w-6xl mx-auto">
+      <section class="bg-[#4292b7] p-5 md:p-16 lg:p-20 mt-10 lg:rounded-lg">
+        <h3 class="text-2xl lg:text-3xl text-white mb-5 font-medium">
+          Please Login
+        </h3>
+        <input
+          class="lg:w-8/12 px-5 py-3 rounded-md block mb-5"
+          type="email"
+          name=""
+          id="user-email"
+          placeholder="Your Email"
+        />
+        <input
+          class="lg:w-8/12 px-5 py-3 rounded-md block mb-5"
+          type="password"
+          name=""
+          id="password"
+          placeholder="Your Password"
+        />
+        <button
+          id="login-btn"
+          class="lg:w-3/12 px-5 py-3 font-medium rounded-md block bg-[#2b2c2e] hover:bg-[#0F172A] text-[#fff]"
+          type="submit"
+        >
+          Login
+        </button>
+      </section>
+    </main>
+    <footer class="text-center mt-20 mb-5 font-medium">
+      <p>&copy; <span>Golam Maula Lincoln</span> 2023</p>
+    </footer>
+
+    <script src="js/login.js"></script>
   </body>
 </html>
