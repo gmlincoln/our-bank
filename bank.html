@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Account - Lincoln</title>
+    <!-- Tailwind CSS-->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h2 class="text-4xl lg:text-5xl text-center mt-10">
+        Welcome <span class="text-[#4292b7] font-semibold">Mr. Lincoln</span>
+      </h2>
+    </header>
+    <!-- Main Section -->
+    <main class="bg-[#385a6a]">
+      <section class="max-w-6xl mx-auto p-5 md:p-16 lg:p-20 mt-10">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-3 lg:gap-5">
+          <div class="bg-green-500 p-5 rounded-lg">
+            <h3 class="text-2xl lg:text-3xl text-white mb-5 font-light">
+              Deposit
+            </h3>
+            <p class="text-3xl lg:text-4xl text-white mb-5 font-medium">
+              $ <span id="deposit">00</span>
+            </p>
+          </div>
+          <!-- Withdraw -->
+          <div class="bg-red-500 p-5 rounded-lg">
+            <h3 class="text-2xl lg:text-3xl text-white mb-5 font-light">
+              Withdraw
+            </h3>
+            <p class="text-3xl lg:text-4xl text-white mb-5 font-medium">
+              $ <span id="withdraw">00</span>
+            </p>
+          </div>
+          <!-- Balance -->
+          <div class="bg-yellow-500 p-5 rounded-lg">
+            <h3 class="text-2xl lg:text-3xl text-white mb-5 font-light">
+              Balance
+            </h3>
+            <p class="text-3xl lg:text-4xl text-white mb-5 font-medium">
+              $ <span id="balance">1240</span>
+            </p>
+          </div>
+        </div>
+        <!-- Another Section Please Deposit and Withdraw -->
+        <div class="mt-5 lg:mt-10 flex flex-col lg:flex-row gap-3 lg:gap-5">
+          <!-- Deposit to Bank -->
+          <div class="bg-purple-500 p-6 w-full lg:w-1/2 rounded-lg">
+            <h3 class="text-2xl lg:text-3xl text-white mb-5 font-extralight">
+              Please Deposit
+            </h3>
+            <div class="pl-4">
+              <input
+                id="deposit-field"
+                class="lg:w-9/12 px-5 py-3 rounded-md block mb-5"
+                type="text"
+                placeholder="$ amount you want to deposit"
+              />
+              <button
+                id="deposit-btn"
+                class="lg:w-3/12 px-5 py-3 font-medium rounded-md block bg-[#2b2c2e] hover:bg-[#0F172A] text-[#fff]"
+                type="submit"
+              >
+                Deposit
+              </button>
+            </div>
+          </div>
+          <!-- Withdraw form Bank -->
+          <div class="bg-violet-500 p-6 w-full lg:w-1/2 rounded-lg">
+            <h3 class="text-2xl lg:text-3xl text-white mb-5 font-extralight">
+              Please Withdraw
+            </h3>
+            <div class="pl-4">
+              <input
+                id="withdraw-field"
+                class="lg:w-9/12 px-5 py-3 rounded-md block mb-5"
+                type="text"
+                placeholder="$ amount you want to withdraw"
+              />
+              <button
+                id="withdraw-btn"
+                class="lg:w-3/12 px-5 py-3 font-medium rounded-md block bg-[#2b2c2e] hover:bg-[#0F172A] text-[#fff]"
+                type="submit"
+              >
+                Withdraw
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Section -->
+    <footer class="text-center mt-20 mb-5 font-medium">
+      <p>&copy; <span>Golam Maula Lincoln</span> 2023</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/balance.js"></script>
+  </body>
+</html>
