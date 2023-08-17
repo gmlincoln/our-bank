@@ -12,6 +12,12 @@ loginBtn.addEventListener('click', function () {
 
 });
 
+//Sign Up Event Handler
+
+document.getElementById('sign-up').addEventListener('click', function () {
+    window.location.href = 'signup.html';
+});
+
 
 
 
