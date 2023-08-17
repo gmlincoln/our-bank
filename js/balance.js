@@ -13,8 +13,11 @@ document.getElementById('deposit-btn').addEventListener('click', function () {
     const currentBalance = parseFloat(currentBalanceStr);
 
     // Validate Deposit Value
-    if (currentDeposit > 0 || !isNaN === currentDeposit) {
-
+    if (currentDeposit <= 0 || isNaN(currentDeposit)) {
+        alert('Enter a valid number!');
+        depositField.value = '';
+    }
+    else {
         const totalDeposit = previousDeposit + currentDeposit;
         displayDeposit.innerText = totalDeposit;
 
@@ -22,8 +25,6 @@ document.getElementById('deposit-btn').addEventListener('click', function () {
         displayBalance.innerText = totalBalance;
 
         depositField.value = '';
-    } else {
-        alert('Enter a valid number!');
     }
 
 });
@@ -47,7 +48,11 @@ document.getElementById('withdraw-btn').addEventListener('click', function () {
     const currentBalance = parseFloat(currentBalanceStr);
 
     // Validate withdraw input field
-    if (currentWithdraw > 0 || !isNaN === currentWithdraw) {
+    if (currentWithdraw <= 0 || isNaN(currentWithdraw)) {
+        alert('Enter a valid number!');
+        withdrawField.value = '';
+    }
+    else {
         const totalWithdraw = previousWithdraw + currentWithdraw;
         displayWithdraw.innerText = totalWithdraw;
 
@@ -55,8 +60,7 @@ document.getElementById('withdraw-btn').addEventListener('click', function () {
         displayBalance.innerText = totalBalance;
 
         withdrawField.value = '';
-    } else {
-        alert('Enter a valid number!');
+
     }
 
 });
