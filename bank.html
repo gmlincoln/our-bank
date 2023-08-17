@@ -3,20 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bank Account - Lincoln</title>
+    <title>Bank Account - Dashboard</title>
     <!-- Tailwind CSS-->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/2fba3f7a77.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- Header Section -->
-    <header>
-      <h2 class="text-4xl lg:text-5xl text-center mt-10">
-        Welcome <span class="text-[#4292b7] font-semibold">Mr. Lincoln</span>
+    <header class="">
+      <div class="bg-[#385a6a] py-5 text-[#FFF]">
+        <div
+          class="flex flex-col lg:flex-row justify-between max-w-6xl mx-auto gap-5 lg:gap-5 md:px-5"
+        >
+          <a class="font-medium text-center text-xl lg:text-2xl" href=""
+            >Our Bank</a
+          >
+          <nav class="">
+            <ul
+              class="flex flex-col lg:flex-row gap-8 justify-center items-center"
+            >
+              <li id="user-name"><i class="fa-solid fa-user mr-3"></i>Abc</li>
+              <button id="logout-btn" class="text-lg hover:text-yellow-600">
+                Sign Out
+              </button>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <h2 class="text-4xl lg:text-5xl text-center my-8">
+        Bank
+        <span class="text-[#4292b7] font-semibold"> Dashboard</span>
       </h2>
     </header>
     <!-- Main Section -->
-    <main class="bg-[#385a6a]">
-      <section class="max-w-6xl mx-auto p-5 md:p-16 lg:p-20 mt-10">
+    <main class="">
+      <section class="max-w-6xl mx-auto p-5 md:p-10 lg:p-15">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-3 lg:gap-5">
           <div class="bg-green-500 p-5 rounded-lg">
             <h3 class="text-2xl lg:text-3xl text-white mb-5 font-light">
@@ -93,7 +118,7 @@
       </section>
     </main>
     <!-- Footer Section -->
-    <footer class="text-center mt-20 mb-5 font-medium">
+    <footer class="text-center my-5 font-medium">
       <p>&copy; <span>Golam Maula Lincoln</span> 2023</p>
     </footer>
 

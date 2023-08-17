@@ -66,3 +66,10 @@ document.getElementById('withdraw-btn').addEventListener('click', function () {
     }
 
 });
+
+
+// Logout event handler
+document.getElementById('logout-btn').addEventListener('click', function () {
+    window.location.href = 'index.html';
+});
+
