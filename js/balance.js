@@ -41,7 +41,7 @@ document.getElementById('withdraw-btn').addEventListener('click', function () {
     const displayWithdraw = document.getElementById('display-withdraw');
     const previousWithdrawStr = displayWithdraw.innerText;
     const previousWithdraw = parseFloat(previousWithdrawStr);
-
+    const totalWithdraw = previousWithdraw + currentWithdraw;
     //Balance  
     const displayBalance = document.getElementById('display-balance');
     const currentBalanceStr = displayBalance.innerText;
@@ -52,10 +52,12 @@ document.getElementById('withdraw-btn').addEventListener('click', function () {
         alert('Enter a valid number!');
         withdrawField.value = '';
     }
+    else if (currentWithdraw > currentBalance) {
+        alert('You have not enough money in your account!');
+        withdrawField.value = '';
+    }
     else {
-        const totalWithdraw = previousWithdraw + currentWithdraw;
         displayWithdraw.innerText = totalWithdraw;
-
         const totalBalance = currentBalance - currentWithdraw;
         displayBalance.innerText = totalBalance;
 
